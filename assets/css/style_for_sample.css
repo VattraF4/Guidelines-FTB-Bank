@@ -69,23 +69,6 @@ a:hover {
 #header ul a:hover, #header ul a.active{
     background-color: #4390e79a;
 }
-/* .content-wrap is the container for the main content (Start Content) */
-.content-wrap {
-    margin-left: 250px;
-    padding: 0px 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 #header ul{
 	font-size: 13px;
@@ -101,6 +84,63 @@ section {
     padding: 20px;
 }
 
+/* .content-wrap is the container for the main content (Start Content) */
+.content-wrap {
+    margin-left: 250px;
+    padding: 0px 30px;
+}
+/* .section-title is the title of the section 
+    Example : "Introduction" */
+.section-title{
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* .title is the title of the content
+    Example : "About FTB Bank" */
+.title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4368e3;
+    margin-bottom: 20px;
+}
+/* .sub-title is the subtitle of the content
+    Example : "Foreign Trade Bank of Cambodia (FTB) Company Profile" */
+.sub-title{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #405cbb;
+    margin-bottom: 20px;
+}
+
+#ftb-mobile {
+    background-image: url("/assets/images/Phone-website-340x534px.png");
+    background-size: contain;  /* Ensures the image scales appropriately */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-position: right center;  /* Places the image to the right, vertically centered */
+    display: flex;
+    justify-content: flex-start;  /* Aligns content to the left side */
+    align-items: center;  /* Vertically centers the content */
+    height: 534px;  /* Set the height of the section */
+    width: 100%;  /* Make the section full width */
+    padding-right: 20px;  /* Optional padding to the right, depending on your layout */
+    position: relative;  /* For positioning any text or content inside if needed */
+  }
+  
+  #ftb-mobile .text-content {
+    position: absolute;  /* Position the text inside the section */
+    width: 65%;  /* Set the width of the text */
+    height: auto;  /* Inherit the height from the parent element */
+    color: rgb(255, 255, 255);
+    background-color: #14141479;
+    
+    padding-left: 20px;  /* Adds space between text and the edge of the section */
+    flex: 1;  /* Allows text to take up the remaining space */
+  }
+  
 footer {
     background-color: #007BFF;
     color: white;
