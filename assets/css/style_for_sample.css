@@ -120,7 +120,7 @@ section {
     display: flex;
     justify-content: space-between; /* Space between text and image */
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     height: auto; /* Let the height adjust to content */
     background-color: #f4f4f4; /* Optional background color */
     color: black; /* Text color */
@@ -129,6 +129,11 @@ section {
 .text-side {
     flex: 1; /* Take up available space */
     padding-right: 20px; /* Space between text and image */
+    font-weight: normal;
+   
+}
+.text-side ul{
+    font-weight: normal;
 }
 
 .image-side {
@@ -140,16 +145,6 @@ section {
     height: auto; /* Maintain aspect ratio */
 }
   
-  #ftb-mobile .text-content {
-    position: absolute;  /* Position the text inside the section */
-    width: 65%;  /* Set the width of the text */
-    height: auto;  /* Inherit the height from the parent element */
-    color: black;
-    /* background-color: #14141479; */
-    
-    padding-left: 20px;  /* Adds space between text and the edge of the section */
-    flex: 1;  /* Allows text to take up the remaining space */
-  }
   
 footer {
     background-color: #007BFF;
