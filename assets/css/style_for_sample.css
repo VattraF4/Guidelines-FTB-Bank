@@ -116,19 +116,29 @@ section {
     margin-bottom: 20px;
 }
 
-#ftb-mobile {
-    background-image: url("/assets/images/Phone-website-340x534px.png");
-    background-size: contain;  /* Ensures the image scales appropriately */
-    background-repeat: no-repeat;  /* Prevents the image from repeating */
-    background-position: right center;  /* Places the image to the right, vertically centered */
+.two-sided-section {
     display: flex;
-    justify-content: flex-start;  /* Aligns content to the left side */
-    align-items: center;  /* Vertically centers the content */
-    height: 534px;  /* Set the height of the section */
-    width: 100%;  /* Make the section full width */
-    padding-right: 20px;  /* Optional padding to the right, depending on your layout */
-    position: relative;  /* For positioning any text or content inside if needed */
-  }
+    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    padding: 20px;
+    height: auto; /* Let the height adjust to content */
+    background-color: #f4f4f4; /* Optional background color */
+    color: black; /* Text color */
+}
+
+.text-side {
+    flex: 1; /* Take up available space */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.image-side {
+    flex: 0; /* Prevent the image side from stretching */
+}
+
+.image-side img {
+    max-width: none; /* Allow original size */
+    height: auto; /* Maintain aspect ratio */
+}
   
   #ftb-mobile .text-content {
     position: absolute;  /* Position the text inside the section */
