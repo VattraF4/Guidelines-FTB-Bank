@@ -3,7 +3,13 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 .header {
     background-color: #afc0d1;
@@ -16,17 +22,7 @@ body {
 	z-index:100;
 }
 
-
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* #header #logo { */
+/* #header #logo  */
 .header #logo {
     display: block;
     height: 20%;
@@ -77,6 +73,8 @@ section {
 }
 
 /* .content-wrap is the container for the main content (Start Content) */
+
+/*  And it is the right side of the page */
 .content-wrap {
     margin-left: 250px;
     padding: 0px 30px;
@@ -153,7 +151,7 @@ section {
     max-width: none; /* Allow original size */
     height: auto; /* Maintain aspect ratio */
 }
-body pre {
+ pre {
     background-color: #ffffff; /* Light gray background */
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
