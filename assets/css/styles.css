@@ -14,17 +14,9 @@ body {
 	height:100%;
 	min-height:100%;
 	z-index:100;
-    /* background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    text-align: center; */
 }
 
-/* nav {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-} */
+
 
 a {
     color: #ffffff;
@@ -89,6 +81,23 @@ section {
     margin-left: 250px;
     padding: 0px 30px;
 }
+
+#section-resource .content-wrap ul{
+    list-style:square;
+    font-size: 15px ;
+    padding: 5px 0 0 15px;
+    margin: -15px 0 0 15px;
+}
+
+/* Set ul style in content-wrap */
+.content-wrap ul{
+    list-style: none;
+    font-size: 15px ;
+    padding: 0;
+    margin: auto;
+}
+
+
 /* .section-title is the title of the section 
     Example : "Introduction" */
 .section-title{
@@ -144,6 +153,15 @@ section {
     max-width: none; /* Allow original size */
     height: auto; /* Maintain aspect ratio */
 }
+body pre {
+    background-color: #ffffff; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    overflow-x: auto; /* Horizontal scrolling if content overflows */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+}
+
   
 #teamwork{
     padding: 20px;
@@ -152,6 +170,7 @@ footer {
     background-color: #007BFF;
     color: white;
     text-align: center;
+    margin-left: 80px;
     padding: 10px;
     position: fixed;
     bottom: 0;
