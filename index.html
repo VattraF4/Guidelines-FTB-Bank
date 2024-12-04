@@ -14,15 +14,11 @@
 
     <!-- jQuery to enable smooth scrolling of javascript -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 
-    <!-- Snip Code preview with color -->
+    <!-- Code preview with color -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-
-    <!-- Custom Pre Styling -->
-    <link href="https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/assets/css/styles.css"
-        rel="stylesheet">
 
 
 
@@ -236,23 +232,29 @@
                             </ul>
 
                             </p>
-                        </ul><hr>
+                        </ul>
+                        <hr>
                     </li>
                     <li><a href="#download">3. Download</a>
                         <p>This is the download of the webpage</p>
-                        <hr></li>
+                        <hr>
+                    </li>
                     <li><a href="#install">4. Install</a>
                         <p>This is the install of the webpage</p>
-                        <hr></li>
+                        <hr>
+                    </li>
                     <li><a href="#register">5. Resgister</a>
                         <p>This is the register of the webpage</p>
-                        <hr></li>
+                        <hr>
+                    </li>
                     <li><a href="#resource">6. Resource</a>
                         <p>This is the resource of the webpage</p>
-                        <hr></li>
+                        <hr>
+                    </li>
                     <li><a href="#teamwork">7 Team Work</a>
                         <p>This is the teamwork of the webpage</p>
-                        <hr></li>
+                        <hr>
+                    </li>
                 </ul>
             </div>
 
@@ -399,27 +401,61 @@ section {
                     <div title="btn-download-and-view">
                         <h4 class="sub-title">You Can Download/View Resource Here</h4><br>
                         <div id="btn-download-and-view">
-                            <button>
-                                <a class="btn" href="assets/css/styles.css" download="styles.css">Download CSS</a>
+                            <button class="btn btn-primary">
+                                <a href="assets/css/styles.css" download="styles.css"></a>Download CSS
                             </button>
-                            <button>
-                                <a class="btn"
-                                    href="https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/assets/css/styles.css"
-                                    target="_blank">View CSS</a>
+                            <button class="btn btn-primary">
+                                <a href="https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/assets/css/styles.css"
+                                    target="_blank"></a>View CSS
                             </button>
+
+                            <button id="btn-hide-show" class="btn btn-primary">Hide/Show Preview CSS</button>
+
 
                             <br>
                             <p><strong><u>Note</u></strong>: Sometime we update source code directory to file structure
                                 css stylesheet , so you can download new or view CSS for last update.</p>
 
                         </div>
-
                     </div>
+                    <!-- <div id="btn-hide-show">
+                        <button class="btn btn-primary">Hide/Show</button>
+                    </div> -->
+                    <!-- Github Code -->
+                    <div id="github-code">
+                        <h1 class="title">Code CSS Preview</h1>
 
+                        <!-- <h2>HTML Code</h2>
+                        <pre><code id="html-code-block"></code></pre> -->
+
+                        <h2>CSS Code</h2>
+                        <pre>
+
+                            <code class="language-css" id="css-code-block">      
+                            </code>
+                        
+                        </pre>
+
+                        <!-- <h2>JS Code</h2>
+                        <pre><code id="code-display"></code></pre> -->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <div class="content-wrap">
+        <pre>
+            <code class="javascript">
+                $(document).ready(function() {
+                    $('#github-code').hide();
+                    $('#btn-hide-show').click(function() {
+                        $('#github-code').toggle(500); // Toggle the visibility of the element with the id "github-code" over a period of 500 milliseconds
+                    });
+                });
+                
+            </code>
+        </pre>
+    </div>
 
     <section id="teamwork">
         <div class="content-wrap">
@@ -449,7 +485,10 @@ section {
     <footer>
         <div id="copyright">&copy; <span id="mgsYear"></span> FTB Bank Guide. All rights reserved.</div>
     </footer>
+    <!-- This script is for change active state by scrolling , and smooth scroll navigation -->
     <script src="assets/js/script.js"></script>
+    <!-- This script is for display code from file -->
+    <script src="assets/js/display-code.js"></script>
 </body>
 
 </html>

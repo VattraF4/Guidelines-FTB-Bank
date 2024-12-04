@@ -88,24 +88,20 @@ section {
     padding: 0px 30px;
 }
 
-#section-resource .content-wrap ul {
-    list-style: square;
-    font-size: 15px;
-    padding: 5px 0 0 15px;
-    margin: -15px 0 0 15px;
-}
-#section-resource .content-wrap li ul{
+
+#section-resource .content-wrap li ul {
     list-style: numbers outside;
     font-size: 15px;
     padding: 5px 0 0 15px;
     margin: auto;
 
 }
-#section-resource .content-wrap ul li ul li{
+
+#section-resource .content-wrap ul li ul li {
     list-style: numbers;
     font-size: 15px;
     margin-left: 20px;
-    color:#007BFF;
+    color: #007BFF;
 
 }
 

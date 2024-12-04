@@ -37,13 +37,4 @@ $(function () { // document ready event
 });
 
 // Print Current Year in html footer copyright
-document.getElementById("mgsYear").innerText = new Date().getFullYear(); // get the current year and update the innerText of the element with the id "mgsYear"
-
-
-// This code use to reload the webpage when the logo is clicked
-$(document).ready(function () {
-	$('#logo').on('click', function (e) {
-		e.preventDefault(); // Prevent the default anchor behavior
-		location.reload(); // Reload the page
-	});
-});
+document.getElementById("mgsYear").innerHTML = new Date().getFullYear(); // get the current year and update the innerHTML of the element with the id "mgsYear"
