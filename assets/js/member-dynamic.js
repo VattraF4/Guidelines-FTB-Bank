@@ -1,9 +1,9 @@
-const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-const url = 'https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/Members/our-team.html';
+// const corsProxy = 'https://cors-anywhere.herokuapp.com/';
+// const url = 'https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/Members/our-team.html';
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch(corsProxy + url)
+    fetch('../Members/our-team.html')
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);

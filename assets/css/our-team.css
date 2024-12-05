@@ -41,6 +41,8 @@ body {
 .team-member p {
     font-size: 14px;
     margin: 5px 0;
+    width: 100%;
+    height: auto !important;
 }
 
 .team-member .contact-info {
@@ -56,4 +58,25 @@ body {
     .team-member {
         width: 100%;
     }
+}
+
+.team table {
+    width: 100%;
+    position: relative;
+    justify-items: center;
+    
+}
+
+tr {
+    border: 1px solid #333;
+}
+td{
+    width: 100px !important;
+    height: auto;
+
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid red;
 }
