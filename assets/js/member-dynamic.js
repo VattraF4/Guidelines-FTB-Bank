@@ -3,7 +3,7 @@ const url = 'https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/Members/our-team.html')
+    fetch(corsProxy + url)
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
