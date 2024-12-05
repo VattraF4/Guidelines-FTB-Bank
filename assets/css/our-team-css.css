@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid red;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.team-member .contact-info {
+    font-size: 14px;
+    color: #999;
+}
+
+.team-member .contact-info i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+    }
+}
