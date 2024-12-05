@@ -1,82 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
-
-.content {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.content h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 .team {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .team-member {
+  
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
     text-align: center;
-    width: 30%;
     margin-bottom: 20px;
 }
 
 .team-member img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid red;
+    height: "200";
+    width: "200";
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .team-member h3 {
     font-size: 18px;
+    font-weight: 600;
     margin: 10px 0 5px;
+    color: rgb(32, 73, 185);
 }
 
-.team-member p {
+.team-member h4 {
     font-size: 14px;
-    margin: 5px 0;
-    width: 100%;
-    height: auto !important;
+    font-weight: 400;
+    color: #888;
+    margin: 5px 0 15px;
 }
 
-.team-member .contact-info {
+.team-member p1 {
     font-size: 14px;
-    color: #999;
+    font-weight: 300;
+    color: #666;
+    border-radius: 5px ;
+    padding: 1px 5px 1px 5px;
+    margin-bottom: 20px;
+}
+.team-member p1:hover{
+    background-color: #3224a875;
+}
+.team-member a {
+    text-decoration: none ;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    margin-top: 20px;
+}
+.team-member span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    padding: 10px 10px 10px 10px;
+    /* background-color: rgb(216, 224, 224); */
+    border-radius: 20px;  
 }
 
-.team-member .contact-info i {
-    margin-right: 5px;
+.team-member span :hover {
+    font-size: 14px;
+    font-weight: 300;
+    color: #3314a3;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(216, 224, 224);
+    border-radius: 20px;  
 }
 
 @media (max-width: 768px) {
     .team-member {
         width: 100%;
+        max-width: 300px;
     }
-}
-
-.team table {
-    width: 100%;
-    position: relative;
-    justify-items: center;
-    
-}
-
-tr {
-    border: 1px solid #333;
-}
-td{
-    width: 100px !important;
-    height: auto;
-
-}
-.team-member img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid red;
 }

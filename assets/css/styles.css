@@ -132,6 +132,13 @@ section {
     color: #4368e3;
     margin-bottom: 20px;
 }
+#teamwork .section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
 
 /* .sub-title is the subtitle of the content
     Example : "Foreign Trade Bank of Cambodia (FTB) Company Profile" */
