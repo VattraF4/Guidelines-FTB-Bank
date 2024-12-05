@@ -19,7 +19,7 @@
 
 
 
-fetch('../Members/our-team.html')
+fetch('our-team.html')
 .then(response => response.text())
 .then(data => {
     const teamSection = document.getElementById('team-container');
