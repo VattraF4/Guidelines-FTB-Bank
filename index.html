@@ -11,6 +11,8 @@
     <!-- style sheet link in External css in local -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/our-team.css">
+    <!-- <link rel="stylesheet" href="assets/css/our-team.css"> -->
 
     <!-- jQuery to enable smooth scrolling of javascript -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -40,10 +42,7 @@
                     <a href="#introduction" title="Introduction">Introduction</a>
                 </li>
                 <li>
-                    <a href="#download" title="Download">Download </a>
-                </li>
-                <li>
-                    <a href="#install" title="Install">Install</a>
+                    <a href="#download" title="Download">Download and Install</a>
                 </li>
                 <li>
                     <a href="#register" title="Register">Register</a>
@@ -169,7 +168,8 @@
     <section id="download">
         <div class="content-wrap">
             <hr>
-            <h2 class="section-title">1. How to Download</h2>
+            <h2 class="section-title">2. Download and Install</h2>
+            
             <p>Once the app is downloaded, it will install automatically on your device. If prompted, allow
                 permissions for
                 the app to work correctly.</p>
@@ -179,18 +179,16 @@
                 <li>Search for "FTB Bank".</li>
                 <li>Click "Download" or "Install".</li>
             </ol>
-        </div>
-    </section>
-    <!-- 2.David and Oudom -->
-    <section id="install">
-        <div class="content-wrap">
-            <hr>
-            <h2 class="section-title">2. How to Install</h2>
+
+            <!-- 2.David and Oudom -->
+            <!-- <h2 class="section-title">2. How to Install</h2> -->
             <p>Once the app is downloaded, it will install automatically on your device. If prompted, allow
                 permissions for
                 the app to work correctly.</p>
         </div>
+        <hr>
     </section>
+
     <!-- Yan Pich ft Raksa -->
     <section id="register">
         <div class="content-wrap">
@@ -235,27 +233,31 @@
                         </ul>
                         <hr>
                     </li>
-                    <li><a href="#download">3. Download</a>
-                        <p>This is the download of the webpage</p>
+                    <li><a href="#download">3. Download and Install</a>
+                        <ul>
+                            <p>This is the download of the webpage and how to install of the webpage</p>
+                        </ul>
                         <hr>
                     </li>
-                    <li><a href="#install">4. Install</a>
-                        <p>This is the install of the webpage</p>
+                    <li><a href="#register">4. Resgister</a>
+                        <ul>
+                            <p>This is the register of the webpage</p>
+                        </ul>
                         <hr>
                     </li>
-                    <li><a href="#register">5. Resgister</a>
-                        <p>This is the register of the webpage</p>
+                    <li><a href="#resource">5. Resource</a>
+                        <ul>
+                            <p>This is the resource of the webpage</p>
+                        </ul>
                         <hr>
                     </li>
-                    <li><a href="#resource">6. Resource</a>
-                        <p>This is the resource of the webpage</p>
+                    <li><a href="#teamwork">6. Team Work</a>
+                        <ul>
+                            <p>This is the teamwork of the webpage</p>
+                        </ul>
                         <hr>
                     </li>
-                    <li><a href="#teamwork">7 Team Work</a>
-                        <p>This is the teamwork of the webpage</p>
-                        <hr>
-                    </li>
-                </ul>
+                </ul><hr>
             </div>
 
             <!-- CSS Style Code Resource -->
@@ -441,54 +443,59 @@ section {
                     </div>
                 </div>
             </div>
-        </div>
+        </div><hr>
     </section>
-    <div class="content-wrap">
-        <pre>
-            <code class="javascript">
-                $(document).ready(function() {
-                    $('#github-code').hide();
-                    $('#btn-hide-show').click(function() {
-                        $('#github-code').toggle(500); // Toggle the visibility of the element with the id "github-code" over a period of 500 milliseconds
-                    });
-                });
-                
-            </code>
-        </pre>
-    </div>
 
     <section id="teamwork">
         <div class="content-wrap">
-            <h2 class="section-title">Team Work</h2>
-            <h4 class="title">Here is my team for developing this webpage</h4>
-            <ul>
-                <li><a href="https://vattraf4.github.io/Portfiliov2/" target="_blank">1. Ra Vattra</a></li>
-                <li><a href="Members/Chamnan David.html" target="_blank">2. Chamnan David</a></li>
-                <li><a href="Members/RC Nan.html" target="_blank">3. RC Nan</a></li>
-                <li><a href="Members/Ra Raksa.html" target="_blank">4. Ra Raksa</a></li>
-                <li><a href="Members/Run Oudom.html" target="_blank">5. Run Oudom</a></li>
-                <li><a href="Members/Yan Pich.html" target="_blank">6. Yan Pich</a></li>
-                <li><a href="Members/Yorn soyun.html" target="_blank">7. Yorn Soyun</a></li>
-                <li><a href="Members/" target="_blank">8. Thai Ralin</a></li>
-            </ul><br>
-            <hr>
-            <ul>
-                <li>Contact customer support at: <a href="mailto:support@ftbbank.com">support@ftbbank.com</a></li>
-                <li><a href="https://www.ftbbank.com">Official FTB Bank Website</a></li>
-            </ul>
-            <p1>Contact us if you have any questions or need help.</p1>
+            <h2 class="section-title">Our Team</h2>
+            <!-- call dynamic team -->
+            <div class="team">
+                <div class="team-member" id="mid-vattra">
+                    <!-- dynamic member -->
+                </div>
+    
+                <!-- Yan pich-->
+                <div class="team-member" id="mid-pich-yan"></div>
+                <!-- Ra Raksa -->
+                <div class="team-member" id="mid-ra-raksa"></div>
+                <!-- Thai Ralin-->
+                <div class="team-member" id="mid-ralin"></div>
+                <!-- RC Nan -->
+                <div class="team-member" id="mid-rc-nan"></div>
+                <!-- yorn soyn -->
+                <div class="team-member" id="mid-yorn-soyun"></div>
+                <!-- run oudom -->
+                <div class="team-member" id="mid-run-oudom"></div>
+                <!-- Chamnan David -->
+                <div class="team-member" id="mid-chamnan-david"></div>
+            </div>
         </div><br>
-        <hr>
+
+    </section>
+    <section><hr>
+        <div class="content-wrap">
+
+        <p1>Contact us if you have any questions or need help.</p1>
+        <ul>
+            <li>Contact customer support at: <a href="mailto:support@ftbbank.com">support@ftbbank.com</a></li>
+            <li><a href="https://www.ftbbank.com">Official FTB Bank Website</a></li>
+        </ul>
+        </div><br>
     </section>
 
 
     <footer>
         <div id="copyright">&copy; <span id="mgsYear"></span> FTB Bank Guide. All rights reserved.</div>
     </footer>
+
+    
     <!-- This script is for change active state by scrolling , and smooth scroll navigation -->
     <script src="assets/js/script.js"></script>
     <!-- This script is for display code from file -->
     <script src="assets/js/display-code.js"></script>
+    <!-- This script is for import html file -->
+    <script src="assets/js/callAllMember.js"></script>
 </body>
 
 </html>
