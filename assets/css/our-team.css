@@ -33,6 +33,9 @@ p {
     text-align: center;
     margin-bottom: 20px;
 }
+.team-member:hover{
+    background-color: rgb(212, 226, 226);
+}
 
 .team-member img {
     height: "200";
