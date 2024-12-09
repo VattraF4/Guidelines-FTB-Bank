@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(error => console.error('Error loading team section:', error));
 });
 
-
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('../Members/Ra Vattra.html')
+    .then(response => response.ok ? response.text() : Promise.reject(`HTTP error! Status: ${response.status}`))
+    .then(data => {
+        document.getElementById('mid-vattra').innerHTML = data;
+        console.log('Team section loaded successfully.');
+    })
+    .catch(error => console.error('Error loading team section:', error));
+});
 
 //Call Yan pich
 document.addEventListener("DOMContentLoaded", () => {
