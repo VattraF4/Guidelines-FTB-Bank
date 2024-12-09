@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://github.com/VattraF4/Guidelines-FTB-Bank/blob/main/Members/Ra%20Vattra.html')
+    fetch('https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/Members/Ra%20Vattra.html')
     // fetch('../Members/Ra Vattra.html')
     .then(response => response.ok ? response.text() : Promise.reject(`HTTP error! Status: ${response.status}`))
     .then(data => {
