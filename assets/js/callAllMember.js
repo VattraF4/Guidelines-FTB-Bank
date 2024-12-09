@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetch('/Guidelines-FTB-Bank/Members/Ra Vattra.html') // Adjust the path for GitHub Pages
+    // fetch('../Members/Ra Vattra.html') // Adjust the path for GitHub Pages
     .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
