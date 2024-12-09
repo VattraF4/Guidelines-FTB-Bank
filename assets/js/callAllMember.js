@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('https://raw.githubusercontent.com/VattraF4/Guidelines-FTB-Bank/main/Members/Ra%20Vattra.html')
-    // fetch('../Members/Ra Vattra.html')
-    .then(response => response.ok ? response.text() : Promise.reject(`HTTP error! Status: ${response.status}`))
+    fetch('/Guidelines-FTB-Bank/Members/Ra Vattra.html') // Adjust the path for GitHub Pages
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text();
+    })
     .then(data => {
         document.getElementById('mid-vattra').innerHTML = data;
         console.log('Team section loaded successfully.');
     })
     .catch(error => console.error('Error loading team section:', error));
 });
+
 
 
 //Call Yan pich
