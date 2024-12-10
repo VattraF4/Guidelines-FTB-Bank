@@ -40,6 +40,6 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#github-code').hide();
     $('#btn-hide-show').click(function() {
-        $('#github-codes').toggle(500); // Toggle the visibility of the element with the id "github-code" over a period of 500 milliseconds
+        $('#github-code').toggle(500); // Toggle the visibility of the element with the id "github-code" over a period of 500 milliseconds
     });
 });
