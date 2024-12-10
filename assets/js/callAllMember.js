@@ -32,6 +32,24 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error('Error loading team section:', error));
 });
 
+
+// Chamnan David from gitServer
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('/Guidelines-FTB-Bank/Members/Chamnan David.html') // Adjust the path for GitHub Pages
+        // fetch('../Members/Ra Vattra.html') // Adjust the path for GitHub Pages
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('mid-chamnan-david').innerHTML = data;
+            console.log('Team section loaded successfully.');
+        })
+        .catch(error => console.error('Error loading team section:', error));
+});
+
 // Ra Raksa from gitServer
 document.addEventListener("DOMContentLoaded", () => {
     fetch('/Guidelines-FTB-Bank/Members/Ra Raksa.html') // Adjust the path for GitHub Pages
@@ -119,22 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error('Error loading team section:', error));
 });
 
-// Chamnan David from gitServer
-document.addEventListener("DOMContentLoaded", () => {
-    fetch('/Guidelines-FTB-Bank/Members/Chamnan David.html') // Adjust the path for GitHub Pages
-        // fetch('../Members/Ra Vattra.html') // Adjust the path for GitHub Pages
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('mid-chamnan-david').innerHTML = data;
-            console.log('Team section loaded successfully.');
-        })
-        .catch(error => console.error('Error loading team section:', error));
-});
 
 
 // ------------- Call file with local links for local files host -----------------//
