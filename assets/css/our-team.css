@@ -33,6 +33,12 @@ p {
     text-align: center;
     margin-bottom: 20px;
 }
+.team-member .social-media {
+    margin-top: 10px;
+}
+.team-member:hover{
+    background-color: rgb(212, 226, 226);
+}
 
 .team-member img {
     height: "200";
@@ -60,14 +66,16 @@ p {
 
 .team-member p1 {
     font-size: 14px;
-    font-weight: 300;
-    color: #666;
+    
+    color: #c26767;
+    font-weight: bold;
     border-radius: 5px ;
     padding: 1px 5px 1px 5px;
     margin-bottom: 20px;
+    border: 1px solid red;
 }
 .team-member p1:hover{
-    background-color: #3224a875;
+    background-color: rgba(0, 0, 255, 0.137);
 }
 .team-member a {
     text-decoration: none ;
@@ -77,11 +85,11 @@ p {
     margin-top: 20px;
 }
 .team-member span {
+    margin-top: 15px;
     font-size: 14px;
     font-weight: 300;
     color: #666;
-    padding: 10px 10px 10px 10px;
-    /* background-color: rgb(216, 224, 224); */
+    padding: 10px 10px 10px 10px;;
     border-radius: 20px;  
 }
 
@@ -89,7 +97,7 @@ p {
     font-size: 14px;
     font-weight: 300;
     color: #3314a3;
-    background-color: rgb(216, 224, 224);
+    background-color: rgb(171, 189, 189);
     border-radius: 20px;  
 }
 
