@@ -178,6 +178,7 @@ section {
 .two-sided-section .image-side {
     flex: 0;
     padding: 20px;
+    margin-right: 20px;
 
 }
 .image-side{
