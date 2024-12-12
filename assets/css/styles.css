@@ -152,7 +152,7 @@ section {
 }
 
 .two-sided-section {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     /* Space between text and image */
     align-items: center;
@@ -163,6 +163,11 @@ section {
     /* Optional background color */
     color: black;
     /* Text color */
+}
+
+
+.two-sided-section a {
+    color: #007BFF;
 }
 
 .text-side {
