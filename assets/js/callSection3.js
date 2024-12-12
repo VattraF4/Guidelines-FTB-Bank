@@ -1,7 +1,7 @@
 
 // Use this method to call files in project directory
 document.addEventListener("DOMContentLoaded", () => {
-  fetch('./Section/3.register.html') // Update the path to the correct one
+  fetch('./Section/3.Register.html') // Update the path to the correct one
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
