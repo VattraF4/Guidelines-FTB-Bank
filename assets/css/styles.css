@@ -165,37 +165,26 @@ section {
     /* Text color */
 }
 
+.two-sided-section .text-side {
+    float: left;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.two-sided-section .image-side {
+    flex: 0;
+    padding: 20px;
+
+}
+.image-side{
+    width: 500px;
+    height: auto;
+}
 
 .two-sided-section a {
     color: #007BFF;
 }
 
-.text-side {
-    flex: 1;
-    /* Take up available space */
-    padding-right: 20px;
-    /* Space between text and image */
-    font-weight: normal;
-
-}
-
-.text-side ul {
-    font-weight: normal;
-}
-
-.image-side {
-    flex: 0;
-    height: auto;
-
-    /* Prevent the image side from stretching */
-}
-
-.image-side img {
-    max-width: none;
-    /* Allow original size */
-    height: auto;
-    /* Maintain aspect ratio */
-}
 
 #btn-download-and-view {
     margin-top: -10px;
