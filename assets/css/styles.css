@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: #1174e6;
     text-decoration: none;
 }
 
@@ -159,10 +159,14 @@ section {
     padding: 15px;
     height: auto;
     /* Let the height adjust to content */
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     /* Optional background color */
     color: black;
     /* Text color */
+}
+.two-sided-section ul ,.two-sided-section ol{
+    padding: 5px 0 0 15px;
+    margin: -15px 0 0 15px;
 }
 
 .two-sided-section .text-side {
@@ -179,6 +183,13 @@ section {
 .image-side{
     width: 500px;
     height: auto;
+}
+.text-side li {
+    font-weight: normal;
+    list-style-type: decimal;
+   
+    /* margin-left: 35px; */
+
 }
 
 .two-sided-section a {
