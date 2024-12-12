@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.text();
     })
     .then(data => {
-      const cssCodeElement = document.getElementById('resource');
+      const cssCodeElement = document.getElementById('sub-resource');
       if (cssCodeElement) {
         cssCodeElement.innerHTML = data;
         console.log('Seciontion "Re loaded successfully.');
       } else {
-        console.error('Element "resource" not found');
+        console.error('Element "sub-resource" not found');
       }
     })
     .catch(error => console.error('Error loading file', error));
