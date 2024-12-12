@@ -152,7 +152,7 @@ section {
 }
 
 .two-sided-section {
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     /* Space between text and image */
     align-items: center;
@@ -185,6 +185,8 @@ section {
 
 .image-side {
     flex: 0;
+    height: auto;
+
     /* Prevent the image side from stretching */
 }
 
