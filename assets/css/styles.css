@@ -5,7 +5,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: #1174e6;
     text-decoration: none;
 }
 
@@ -164,31 +164,39 @@ section {
     color: black;
     /* Text color */
 }
-
-.text-side {
-    flex: 1;
-    /* Take up available space */
-    padding-right: 20px;
-    /* Space between text and image */
-    font-weight: normal;
-
+.two-sided-section ul ,.two-sided-section ol{
+    padding: 5px 0 0 15px;
+    margin: -15px 0 0 15px;
 }
 
-.text-side ul {
+.two-sided-section .text-side {
+    float: left;
+    padding: 20px;
     font-weight: normal;
 }
 
-.image-side {
+.two-sided-section .image-side {
     flex: 0;
-    /* Prevent the image side from stretching */
+    padding: 20px;
+    margin-right: 20px;
+
+}
+.image-side{
+    width: 500px;
+    height: auto;
+}
+.text-side li {
+    font-weight: normal;
+    list-style-type: decimal;
+   
+    /* margin-left: 35px; */
+
 }
 
-.image-side img {
-    max-width: none;
-    /* Allow original size */
-    height: auto;
-    /* Maintain aspect ratio */
+.two-sided-section a {
+    color: #007BFF;
 }
+
 
 #btn-download-and-view {
     margin-top: -10px;
