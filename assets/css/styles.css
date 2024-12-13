@@ -165,6 +165,11 @@ section {
     /* Text color */
 }
 
+
+.two-sided-section a {
+    color: #007BFF;
+}
+
 .text-side {
     flex: 1;
     /* Take up available space */
@@ -180,6 +185,8 @@ section {
 
 .image-side {
     flex: 0;
+    height: auto;
+
     /* Prevent the image side from stretching */
 }
 
