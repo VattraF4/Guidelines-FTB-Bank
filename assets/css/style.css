@@ -20,7 +20,7 @@ a:hover {
 	box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 	position: fixed;
 	left: 0;
-	width: 60px;
+	width: 70px;
 	/* Increased for better usability */
 	height: 100%;
 	z-index: 9999;
@@ -71,15 +71,16 @@ section {
 }
 
 .content-wrap {
-	margin-left: 70px;
+	margin-left: 50px;
 	/* Adjusted to match the header width */
 	padding: 20px;
 }
 
 /* Lists inside Content Wrap */
-.content-wrap ul {
+.content-wrap ul , .content-wrap ol{
 	list-style: none;
-	font-size: 15px;
+	font-size: 16px;
+	
 	padding: 0;
 }
 
@@ -121,12 +122,20 @@ section {
 .two-sided-section .text-side {
 	flex: 1;
 	padding: 20px;
-	font-weight: normal;
+	font-weight: none;
+}
+.text-side ul li, .text-side ol li{
+	font-size: normal;
 }
 
-.two-sided-section .image-side {
+/* .two-sided-section .image-side {
 	flex: 0 1 500px;
 	padding: 20px;
+} */
+.image-side {
+    width: 100%; /* Default to 100% for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Maximum width for larger screens */
 }
 
 /* Buttons */
@@ -159,12 +168,12 @@ footer {
 	}
 
 	.text-side {
-		font-size: 15px;
+		font-size: normal;
 	}
 
 	.image-side {
 		width: 100%;
-		max-width: 300px;
+		max-width: 250px;
 		height: auto;
 	}
 }
@@ -175,14 +184,13 @@ footer {
 	}
 
 	.text-side {
-		font-size: 17px;
+		font-size: normal;
 	}
 
 	.image-side {
-		width: 100%;
-		max-width: 400px;
-		height: auto;
-	}
+        max-width: 300px; /* Medium image for tablets */
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 901px) {
@@ -191,12 +199,12 @@ footer {
 	}
 
 	.text-side {
-		font-size: 20px;
+		font-size: normal;
+
 	}
 
 	.image-side {
-		width: 100%;
-		max-width: 500px;
-		height: auto;
-	}
+        max-width: 500px; /* Larger image for PCs */
+        height: auto;
+    }
 }
