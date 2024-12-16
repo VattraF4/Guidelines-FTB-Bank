@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.text();
     })
     .then(data => {
-      const cssCodeElement = document.getElementById('register');
-      if (cssCodeElement) {
-        cssCodeElement.innerHTML = data;
+      const htmlCodeSection = document.getElementById('register');
+      if (htmlCodeSection) {
+        htmlCodeSection.innerHTML = data;
         console.log('Seciontion "Re loaded successfully.');
       } else {
         console.error('Element download not found');
