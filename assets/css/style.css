@@ -170,28 +170,32 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-	* {
-		font-size: 12px;
+	*  {
+		font-size: 14px;
 	}
 
 	.content-wrap {
-		padding: 10px;
-		width: 80%;
-	}
+    padding: 0;
+
+}
 
 	.header {
 		background-color: #afc0d1;
 		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 		position: fixed;
 		left: 0;
-		width: 20% !important;
+		width: 30% !important;
 		height: 100%;
 		z-index: 9999;
+	}
+	#logo img{
+		width: 100px;
+
 	}
 
 	.text-side {
 		font-size: normal;
-		margin-left: 15px;
+		/* margin-left: 15px; */
 		padding: 2px;
 		width: 100%;
 
