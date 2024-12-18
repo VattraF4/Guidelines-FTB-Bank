@@ -15,12 +15,12 @@ a:hover {
 }
 
 /* Header */
-.header {
+.header,.header {
 	background-color: #afc0d1;
 	box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 	position: fixed;
 	left: 0;
-	width: 250px;
+	width: 50px;
 	/* Increased for better usability */
 	height: 100%;
 	z-index: 9999;
@@ -77,10 +77,11 @@ section {
 }
 
 /* Lists inside Content Wrap */
-.content-wrap ul , .content-wrap ol{
+.content-wrap ul,
+.content-wrap ol {
 	list-style: none;
 	font-size: 16px;
-	
+
 	padding: 0;
 }
 
@@ -124,7 +125,9 @@ section {
 	padding: 20px;
 	font-weight: none;
 }
-.text-side ul li, .text-side ol li{
+
+.text-side ul li,
+.text-side ol li {
 	font-size: normal;
 }
 
@@ -133,9 +136,12 @@ section {
 	padding: 20px;
 } */
 .image-side {
-    width: 100%; /* Default to 100% for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Maximum width for larger screens */
+	width: 100%;
+	/* Default to 100% for responsiveness */
+	height: auto;
+	/* Maintain aspect ratio */
+	max-width: 500px;
+	/* Maximum width for larger screens */
 }
 
 /* Buttons */
@@ -163,12 +169,33 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
+	* {
+		font-size: 12px;
+	}
+
 	.content-wrap {
 		padding: 10px;
+		width: 70%;
+	}
+
+	.header {
+		background-color: #afc0d1;
+		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+		position: fixed;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		z-index: 9999;
 	}
 
 	.text-side {
 		font-size: normal;
+		margin-left: 0px;
+		padding: 2px;
+	}
+
+	.text-side ul, .text-side ol {
+		margin-left: 2px;
 	}
 
 	.image-side {
@@ -176,9 +203,9 @@ footer {
 		max-width: 250px;
 		height: auto;
 	}
+
 	.image-side img {
-		max-width:fit-content;
-		height: auto;
+		display: none;
 	}
 }
 
@@ -192,9 +219,10 @@ footer {
 	}
 
 	.image-side {
-        max-width: 300px; /* Medium image for tablets */
-        height: auto;
-    }
+		max-width: 300px;
+		/* Medium image for tablets */
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 901px) {
@@ -208,7 +236,9 @@ footer {
 	}
 
 	.image-side {
-        max-width: 500px; /* Larger image for PCs */
-        height: auto;
-    }
+		max-width: 500px;
+		/* Larger image for PCs */
+		height: auto;
+	}
+
 }
