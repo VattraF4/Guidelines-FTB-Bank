@@ -205,6 +205,20 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 2) {
+	.content-wrap {
+		font-size: 14px;
+	}
+
+	.text-side {
+		margin-left: 0;
+	}
+
+	.text-side ul, .text-side ol {
+		margin-left: 0;
+	}
+}
+
 @media only screen and (min-width: 601px) and (max-width: 900px) {
 	.content-wrap {
 		padding: 20px;
