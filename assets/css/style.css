@@ -15,12 +15,13 @@ a:hover {
 }
 
 /* Header */
+.header,
 .header {
 	background-color: #afc0d1;
 	box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 	position: fixed;
 	left: 0;
-	width: 250px;
+	width: 50px;
 	/* Increased for better usability */
 	height: 100%;
 	z-index: 9999;
@@ -77,10 +78,11 @@ section {
 }
 
 /* Lists inside Content Wrap */
-.content-wrap ul , .content-wrap ol{
+.content-wrap ul,
+.content-wrap ol {
 	list-style: none;
 	font-size: 16px;
-	
+
 	padding: 0;
 }
 
@@ -124,7 +126,9 @@ section {
 	padding: 20px;
 	font-weight: none;
 }
-.text-side ul li, .text-side ol li{
+
+.text-side ul li,
+.text-side ol li {
 	font-size: normal;
 }
 
@@ -133,9 +137,12 @@ section {
 	padding: 20px;
 } */
 .image-side {
-    width: 100%; /* Default to 100% for responsiveness */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Maximum width for larger screens */
+	width: 100%;
+	/* Default to 100% for responsiveness */
+	height: auto;
+	/* Maintain aspect ratio */
+	max-width: 500px;
+	/* Maximum width for larger screens */
 }
 
 /* Buttons */
@@ -163,28 +170,67 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
+	*  {
+		font-size: 14px;
+	}
+
 	.content-wrap {
-		padding: 10px;
+    padding: 0;
+	margin-left: 20%;
+
+}
+
+	.header {
+		background-color: #afc0d1;
+		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+		position: fixed;
+		left: 0;
+		width: 30% !important;
+		height: 100%;
+		z-index: 9999;
+	}
+	#logo img{
+		width: 100px;
+
 	}
 
 	.text-side {
 		font-size: normal;
+		/* margin-left: 15px; */
+		padding: 2px;
+		width: 100%;
+
 	}
 
-	.image-side {
-		width: 100%;
-		max-width: 250px;
-		height: auto;
+	.text-side ul,
+	.text-side ol {
+		margin-left: 2px;
 	}
+
 	.image-side img {
-		max-width:fit-content;
-		height: auto;
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 2) {
+	.content-wrap {
+		font-size: 14px;
+	}
+
+	.text-side {
+		margin-left: 0;
+	}
+
+	.text-side ul,
+	.text-side ol {
+		margin-left: 0;
 	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
 	.content-wrap {
 		padding: 20px;
+		max-width: 80%;
 	}
 
 	.text-side {
@@ -192,9 +238,10 @@ footer {
 	}
 
 	.image-side {
-        max-width: 300px; /* Medium image for tablets */
-        height: auto;
-    }
+		max-width: 300px;
+		/* Medium image for tablets */
+		height: auto;
+	}
 }
 
 @media only screen and (min-width: 901px) {
@@ -208,7 +255,9 @@ footer {
 	}
 
 	.image-side {
-        max-width: 500px; /* Larger image for PCs */
-        height: auto;
-    }
+		max-width: 500px;
+		/* Larger image for PCs */
+		height: auto;
+	}
+
 }
