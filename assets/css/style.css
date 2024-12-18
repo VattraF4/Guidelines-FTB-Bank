@@ -15,7 +15,8 @@ a:hover {
 }
 
 /* Header */
-.header,.header {
+.header,
+.header {
 	background-color: #afc0d1;
 	box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 	position: fixed;
@@ -175,7 +176,7 @@ footer {
 
 	.content-wrap {
 		padding: 10px;
-		width: 70%;
+		width: 80%;
 	}
 
 	.header {
@@ -183,7 +184,7 @@ footer {
 		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
 		position: fixed;
 		left: 0;
-		width: 15%;
+		width: 20% !important;
 		height: 100%;
 		z-index: 9999;
 	}
@@ -196,7 +197,8 @@ footer {
 
 	}
 
-	.text-side ul, .text-side ol {
+	.text-side ul,
+	.text-side ol {
 		margin-left: 2px;
 	}
 
@@ -214,7 +216,8 @@ footer {
 		margin-left: 0;
 	}
 
-	.text-side ul, .text-side ol {
+	.text-side ul,
+	.text-side ol {
 		margin-left: 0;
 	}
 }
