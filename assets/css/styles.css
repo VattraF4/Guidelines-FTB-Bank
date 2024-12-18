@@ -84,7 +84,7 @@ section {
 
 /*  And it is the right side of the page */
 .content-wrap {
-    margin-left: 250px !important;
+    margin-left: 250px ;
     padding: 0px 30px;
 }
 
@@ -233,17 +233,63 @@ footer {
     width: 100%;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 600px) {
-    .content-wrap {
-        padding: 10px;
-    }
-    .text-side {
-        font-size: 15px;
-    }
-    .image-side {
-        width: 300px;
-        height: auto;
-    }
+	*  {
+		font-size: 14px;
+	}
+
+	.content-wrap {
+    padding: 0;
+	margin-left: 20% !important;
+
+}
+
+	.header {
+		background-color: #afc0d1;
+		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+		position: fixed;
+		left: 0;
+		width: 35% !important;
+		height: 100%;
+		z-index: 9999;
+	}
+	#logo img{
+		width: 100px;
+
+	}
+
+	.text-side {
+		font-size: normal;
+		/* margin-left: 15px; */
+		padding: 2px;
+		width: 100%;
+
+	}
+
+	.text-side ul,
+	.text-side ol {
+		margin-left: 2px;
+	}
+
+	.image-side img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 2) {
+	.content-wrap {
+		font-size: 14px;
+	}
+
+	.text-side {
+		margin-left: 0;
+	}
+
+	.text-side ul,
+	.text-side ol {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
