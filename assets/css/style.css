@@ -190,18 +190,14 @@ footer {
 
 	.text-side {
 		font-size: normal;
-		margin-left: 0px;
+		margin-left: 15px;
 		padding: 2px;
+		width: 100%;
+
 	}
 
 	.text-side ul, .text-side ol {
 		margin-left: 2px;
-	}
-
-	.image-side {
-		width: 100%;
-		max-width: 250px;
-		height: auto;
 	}
 
 	.image-side img {
