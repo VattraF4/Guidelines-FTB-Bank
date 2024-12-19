@@ -170,47 +170,18 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-	*  {
-		font-size: 14px;
-	}
-
-	.content-wrap {
-    padding: 0;
-	margin-left: 20%;
+    .two-sided-section {
+        flex-direction: column;
+    }
+    .text-side {
+        width: 100%;
+    }
+    .image-side {
+        width: 100%;
+    }
 
 }
 
-	.header {
-		background-color: #afc0d1;
-		box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
-		position: fixed;
-		left: 0;
-		width: 30% !important;
-		height: 100%;
-		z-index: 9999;
-	}
-	#logo img{
-		width: 100px;
-
-	}
-
-	.text-side {
-		font-size: normal;
-		/* margin-left: 15px; */
-		padding: 2px;
-		width: 100%;
-
-	}
-
-	.text-side ul,
-	.text-side ol {
-		margin-left: 2px;
-	}
-
-	.image-side img {
-		display: none;
-	}
-}
 
 @media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 2) {
 	.content-wrap {
