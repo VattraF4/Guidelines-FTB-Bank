@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    width: 100%;
+    width: calc(100% - 80px);
     margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ section {
     list-style: numbers;
     font-size: 15px;
     margin-left: 20px;
-    color: #007BFF;
+    color: #346292;
 
 }
 
@@ -221,6 +221,16 @@ section {
 #teamwork {
     padding: 20px;
 }
+.video-frame {
+    margin-right: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 255px;
+}
+
+
+
 
 footer {
     background-color: #007BFF;
