@@ -84,7 +84,7 @@ section {
 
 /*  And it is the right side of the page */
 .content-wrap {
-    margin-left: 250px !important;
+    margin-left: 250px ;
     padding: 0px 30px;
 }
 
@@ -233,17 +233,33 @@ footer {
     width: 100%;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 600px) {
-    .content-wrap {
-        padding: 10px;
+    .two-sided-section {
+        flex-direction: column;
     }
     .text-side {
-        font-size: 15px;
+        width: 100%;
     }
     .image-side {
-        width: 300px;
-        height: auto;
+        width: 100%;
     }
+
+}
+
+@media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 2) {
+	.content-wrap {
+		font-size: 14px;
+	}
+
+	.text-side {
+		margin-left: 0;
+	}
+
+	.text-side ul,
+	.text-side ol {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
