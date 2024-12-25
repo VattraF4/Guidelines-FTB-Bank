@@ -137,7 +137,7 @@ section {
 	padding: 20px;
 } */
 .image-side {
-	width: 100%;
+	width: 100px;
 	/* Default to 100% for responsiveness */
 	height: auto;
 	/* Maintain aspect ratio */
