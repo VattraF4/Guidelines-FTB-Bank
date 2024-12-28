@@ -244,6 +244,7 @@ footer {
 }
 
 /* Media Queries */
+/* 
 @media only screen and (max-width: 600px) {
     .two-sided-section {
         flex-direction: column;
@@ -296,4 +297,4 @@ footer {
         width: 500px;
         height: auto;
     }
-}
+} */
